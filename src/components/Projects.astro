@@ -1,0 +1,52 @@
+---
+import TailwindIcon from './icons/Tailwind.astro'
+import JavascriptIcon from './icons/Javascript.astro'
+
+const TAGS = {
+  TAILWIND: {
+    name: 'Tailwind CSS',
+    class: 'bg-[#003159] text-white',
+    icon: TailwindIcon
+  },
+  JAVASCRIPT: {
+    name: 'Javascript',
+    class: 'bg-black text-white',
+    icon: JavascriptIcon
+  }
+}
+
+const PROJECTS = [
+  {
+    title: 'Monkey Type',
+    description: 'Pon a prueba tu velocidad escribiendo, acepta el desafío',
+    link: 'https://monkeytype.com/',
+    github: 'https://github.com/monkeytypegame/monkeytype',
+    image: '/projects/monkeyType.webp',
+    tags: [TAGS.TAILWIND, TAGS.JAVASCRIPT]
+  }
+]
+---
+
+{
+  PROJECTS.map(({ title, description, link, github, image, tags }) => (
+    <article>
+      <h3 class='text-2xl font-semibold text-yellow-200 mb-2'>{title}</h3>
+      <p class='text-lg mb-4 text-pretty'>{description}</p>
+      <ul class='flex gap-x-2 flex-row'>
+        {tags.map((tag) => (
+          <li>
+            <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 mb-4`}>
+              <tag.icon class='size-4' />
+              {tag.name}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <img
+        src={image}
+        alt={`Captura de pantalla del proyecto ${image}`}
+        class='rounded shadow-2xl shadow-white/10'
+      />
+    </article>
+  ))
+}
