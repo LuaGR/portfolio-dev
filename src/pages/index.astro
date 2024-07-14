@@ -14,34 +14,37 @@ import Footer from '../components/Footer.astro'
 
 <Layout
   title='Porfolio de Renato Lua - Desarrollador y Programador Web'
-  description='Contrata a Renato Lua para crear tu aplicación web. Desarrollador Web, especializado en crear aplicaciones únicas.'
->
+  description='Contrata a Renato Lua para crear tu aplicación web. Desarrollador Web, especializado en crear aplicaciones únicas.'>
   <main class='px-4'>
-    <SectionContainer id='top' class='pt-44 pb-32'>
+    <SectionContainer
+      id='top'
+      class='pt-44 pb-32'>
       <img
         class='w-12 h-12 rounded-full mb-4'
-        src='https://scontent.ftru1-1.fna.fbcdn.net/v/t39.30808-6/291587641_3241753006036560_3602571414340072817_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEGMT9vPoZ0fdQM4jRvGEVQ5k0dDWtVQo7mTR0Na1VCjkinUZWpuDJuSsGSNNUrY8bUzWjL6Ux6xKQRi5Cd1v_H&_nc_ohc=6PbmTdqYW1kQ7kNvgHrW-ON&_nc_ht=scontent.ftru1-1.fna&oh=00_AYDPKtX6EVst-lt93rb5w_nuSEXfxg8UmZv3TKEIWWDThg&oe=666199A8'
+        src='/public/perfil.jpg'
         alt='Lua photo'
       />
-      <h1 class='text-white text-3xl md:text-4xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10'
+      <h1
+        class='text-white text-3xl md:text-4xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10'
         >Hola, soy Renato Lua
         <a
           href='https://pe.linkedin.com/in/renato-lua'
           rel='noopener'
           target='_blank'
-          class='flex justify-center items-center'
-        >
+          class='flex justify-center items-center'>
           <Badge>Disponible para trabajar</Badge>
         </a>
       </h1>
       <h2 class='text-xl lg:text-2xl text-wrap max-w-[700px]'>
-        <span class='text-yellow-200/90'>Frontend Developer.</span><span class='text-red-200/90'>
+        <span class='text-yellow-200/90'>Frontend Developer.</span><span
+          class='text-red-200/90'>
           De Chimbote, Perú.</span
         ><span class='opacity-75'> Especializado en crear webs estáticas.</span>
       </h2>
 
       <nav class='flex gap-4 mt-8 flex-wrap'>
-        <SocialPill href='https://www.linkedin.com/in/renato-lua-aguirre-gonzales'>
+        <SocialPill
+          href='https://www.linkedin.com/in/renato-lua-aguirre-gonzales'>
           <LinkedInIcon class='size-4 md:size-6' />
           LinkedIn
         </SocialPill>
@@ -51,9 +54,9 @@ import Footer from '../components/Footer.astro'
           Github
         </SocialPill>
 
-        <SocialPill href='mailto:renatoag98@gmail.com'>
+        <SocialPill href='mailto:lua.dev26@gmail.com'>
           <EmailIcon class='size-4 md:size-6' />
-          renatoag98@gmail.com
+          lua.dev26@gmail.com
         </SocialPill>
       </nav>
     </SectionContainer>
