@@ -12,17 +12,50 @@ const TAGS = {
     name: 'Javascript',
     class: 'bg-black text-white',
     icon: JavascriptIcon
+  },
+  TYPESCRIPT: {
+    name: 'Typescript',
+    class: 'bg-white text-black',
+    icon: JavascriptIcon
+  },
+  SHADCNUI: {
+    name: 'Shadcnui',
+    class: 'bg-white text-black',
+    icon: JavascriptIcon
+  },
+  ASTRO: {
+    name: 'Astro',
+    class: 'bg-black',
+    icon: JavascriptIcon
+  },
+  REACT: {
+    name: 'React',
+    class: 'bg-white text-black',
+    icon: JavascriptIcon
+  },
+  FLOWBITE: {
+    name: 'Flowbite',
+    class: 'bg-white text-black',
+    icon: JavascriptIcon
   }
 }
 
 const PROJECTS = [
   {
     title: 'Monkey Type',
-    description: 'Pon a prueba tu velocidad escribiendo, acepta el desafío',
+    description: 'Pon a prueba tu velocidad escribiendo, acepta el desafío.',
     link: 'https://monkeytype.com/',
     github: 'https://github.com/monkeytypegame/monkeytype',
     image: '/projects/monkeyType.webp',
     tags: [TAGS.TAILWIND, TAGS.JAVASCRIPT]
+  },
+  {
+    title: 'Tsuki Store',
+    description: 'Siéntete como tu héroe favorito.',
+    link: 'https://tsuki-store.com/',
+    github: 'https://github.com/LuaAguirre/tsuki-store',
+    image: '/projects/tsuki.png',
+    tags: [TAGS.TAILWIND, TAGS.TYPESCRIPT]
   }
 ]
 ---
@@ -35,7 +68,8 @@ const PROJECTS = [
       <ul class='flex gap-x-2 flex-row'>
         {tags.map((tag) => (
           <li>
-            <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 mb-4`}>
+            <span
+              class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 mb-4`}>
               <tag.icon class='size-4' />
               {tag.name}
             </span>
