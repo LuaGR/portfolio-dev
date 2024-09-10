@@ -15,48 +15,41 @@ import Footer from '../components/Footer.astro'
 <Layout
   title='Porfolio de Renato Lua - Desarrollador y Programador Web'
   description='Contrata a Renato Lua para crear tu aplicación web. Desarrollador Web, especializado en crear aplicaciones únicas.'>
-  <main class='px-4'>
+  <main class='px-4 sm:px-20'>
     <SectionContainer
       id='top'
-      class='pt-44 pb-32'>
+      class='pt-16 pb-32'>
       <img
-        class='w-12 h-12 rounded-full mb-4'
-        src='/public/perfil.jpg'
-        alt='Lua photo'
+        class='size-24 rounded-full bg-yellow-50'
+        src='/public/lua.webp'
+        alt='Perfil de Lua'
       />
-      <h1
-        class='text-white text-3xl md:text-4xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10'
-        >Hola, soy Renato Lua
-        <a
-          href='https://pe.linkedin.com/in/renato-lua'
-          rel='noopener'
-          target='_blank'
-          class='flex justify-center items-center'>
-          <Badge>Disponible para trabajar</Badge>
-        </a>
-      </h1>
-      <h2 class='text-xl lg:text-2xl text-wrap max-w-[700px]'>
-        <span class='text-yellow-200/90'>Frontend Developer.</span><span
-          class='text-red-200/90'>
-          De Chimbote, Perú.</span
-        ><span class='opacity-75'> Especializado en crear webs estáticas.</span>
-      </h2>
+      <div class='flex flex-col gap-4'>
+        <h1 class='text-white text-3xl md:text-4xl font-bold'
+          >Hola, soy Lua
+        </h1>
+        <h2 class='text-xl text-wrap max-w-[700px]'>
+          <span class='text-yellow-200/90'>Frontend Developer.</span><span
+            class='text-red-200/90'>
+            De Chimbote, Perú.</span
+          ><span class='opacity-75'>
+            Especializado en crear webs estáticas.</span
+          >
+        </h2>
+      </div>
 
-      <nav class='flex gap-4 mt-8 flex-wrap'>
+      <nav class='flex gap-4 flex-wrap'>
         <SocialPill
           href='https://www.linkedin.com/in/renato-lua-aguirre-gonzales'>
-          <LinkedInIcon class='size-4 md:size-6' />
-          LinkedIn
+          <LinkedInIcon class='size-6' />
         </SocialPill>
 
         <SocialPill href='https://github.com/LuaAguirre'>
-          <GithubIcon class='size-4 md:size-6' />
-          Github
+          <GithubIcon class='size-6' />
         </SocialPill>
 
         <SocialPill href='mailto:lua.dev26@gmail.com'>
           <EmailIcon class='size-4 md:size-6' />
-          lua.dev26@gmail.com
         </SocialPill>
       </nav>
     </SectionContainer>

@@ -42,29 +42,38 @@ const TAGS = {
 
 const PROJECTS = [
   {
+    title: 'SOSdev',
+    description: 'Recursos para salvarle la vida a los desarrolladores.',
+    link: 'https://sosdev.vercel.app/',
+    github: 'https://github.com/LuaGR/SOSdev',
+    image: '/projects/monkeyType.webp',
+    tags: [TAGS.TAILWIND, TAGS.JAVASCRIPT]
+  },
+  {
+    title: 'Tsuki Store',
+    description:
+      'Ropa urbana inspirada en anime. Siéntete como tu héroe favorito.',
+    link: 'https://tsuki-store.com/',
+    github: 'https://github.com/LuaAguirre/tsuki-store',
+    image: '/projects/tsuki.png',
+    tags: [TAGS.TAILWIND, TAGS.TYPESCRIPT]
+  },
+  {
     title: 'Monkey Type',
     description: 'Pon a prueba tu velocidad escribiendo, acepta el desafío.',
     link: 'https://monkeytype.com/',
     github: 'https://github.com/monkeytypegame/monkeytype',
     image: '/projects/monkeyType.webp',
     tags: [TAGS.TAILWIND, TAGS.JAVASCRIPT]
-  },
-  {
-    title: 'Tsuki Store',
-    description: 'Siéntete como tu héroe favorito.',
-    link: 'https://tsuki-store.com/',
-    github: 'https://github.com/LuaAguirre/tsuki-store',
-    image: '/projects/tsuki.png',
-    tags: [TAGS.TAILWIND, TAGS.TYPESCRIPT]
   }
 ]
 ---
 
 {
   PROJECTS.map(({ title, description, link, github, image, tags }) => (
-    <article>
+    <article class='mb-8'>
       <h3 class='text-2xl font-semibold text-yellow-200 mb-2'>{title}</h3>
-      <p class='text-lg mb-4 text-pretty'>{description}</p>
+      <p class='text-lg mb-8 text-pretty'>{description}</p>
       <ul class='flex gap-x-2 flex-row'>
         {tags.map((tag) => (
           <li>
