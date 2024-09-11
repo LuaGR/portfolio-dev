@@ -1,0 +1,129 @@
+---
+import TailwindIcon from "../icons/Tailwind.astro";
+import JavascriptIcon from "../icons/Javascript.astro";
+import PostgreSQLIcon from "../icons/PostgreSQL.astro";
+import NextJSIcon from "../icons/NextJS.astro";
+import TypescriptIcon from "../icons/Typescript.astro";
+import NextUIIcon from "../icons/NextUI.astro";
+import ReactIcon from "../icons/React.astro";
+import AstroIcon from "../icons/AstroIcon.astro";
+import ShadcnuiIcon from "../icons/Shadcnui.astro";
+
+const TAGS = {
+  JAVASCRIPT: {
+    name: "Javascript",
+    class: "bg-white/20 text-white",
+    icon: JavascriptIcon,
+  },
+  TYPESCRIPT: {
+    name: "Typescript",
+    class: "bg-white/20 text-white",
+    icon: TypescriptIcon,
+  },
+  ASTRO: {
+    name: "Astro",
+    class: "bg-white/20 text-white",
+    icon: AstroIcon,
+  },
+  REACT: {
+    name: "React",
+    class: "bg-white/20 text-white",
+    icon: ReactIcon,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-white/20 text-white",
+    icon: TailwindIcon,
+  },
+  NEXTJS: {
+    name: "Next.js",
+    class: "bg-white/20 text-white",
+    icon: NextJSIcon,
+  },
+  POSTGRESQL: {
+    name: "PostgreSQL",
+    class: "bg-white/20 text-white",
+    icon: PostgreSQLIcon,
+  },
+  SHADCNUI: {
+    name: "Shadcn/ui",
+    class: "bg-white/20 text-white",
+    icon: ShadcnuiIcon,
+  },
+  NEXTUI: {
+    name: "NextUI",
+    class: "bg-white/20 text-white",
+    icon: NextUIIcon,
+  },
+};
+
+const PROJECTS = [
+  {
+    title: "SOSdev",
+    description:
+      "Biblioteca actualizada con recursos para desarrolladores. Creado desde cero con Next.js, Typescript, Tailwind CSS, PostgreSQL y NextUI.",
+    link: "https://sosdev.vercel.app/",
+    github: "https://github.com/LuaGR/SOSdev",
+    image: "/projects/monkeyType.webp",
+    tags: [
+      TAGS.NEXTJS,
+      TAGS.TYPESCRIPT,
+      TAGS.TAILWIND,
+      TAGS.POSTGRESQL,
+      TAGS.NEXTUI,
+    ],
+  },
+  {
+    title: "Tsuki Store",
+    description:
+      "E-commerce de ropa urbana inspirada en anime. Creado desde cero con Astro, Typescript, Tailwind CSS, React y Shadcn/ui.",
+    link: "https://tsuki-store.vercel.app/",
+    github: "https://github.com/LuaAguirre/tsuki-store",
+    image: "/projects/tsuki.png",
+    tags: [
+      TAGS.ASTRO,
+      TAGS.REACT,
+      TAGS.TYPESCRIPT,
+      TAGS.TAILWIND,
+      TAGS.SHADCNUI,
+    ],
+  },
+  {
+    title: "Monkey Type Clone",
+    description:
+      "Clon del juego de maquinografía Monkey Type. Creado con Javascript y Tailwind CSS.",
+    link: "https://monkeytype.com/",
+    github: "https://github.com/monkeytypegame/monkeytype",
+    image: "/projects/monkeyType.webp",
+    tags: [TAGS.TAILWIND, TAGS.JAVASCRIPT],
+  },
+];
+---
+
+{
+  PROJECTS.map(({ title, description, link, github, image, tags }) => (
+    <article class="mb-8">
+      <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+      <p class="text-md mb-8 text-pretty text-white/80">{description}</p>
+      <ul class="flex flex-wrap gap-x-2 ">
+        {tags.map((tag) => (
+          <li>
+            <span
+              class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 mb-4`}
+            >
+              <tag.icon class="size-4" />
+              {tag.name}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <img
+          src={image}
+          alt={`Captura de pantalla del proyecto ${image}`}
+          class="rounded shadow-2xl shadow-white/10"
+        />
+      </a>
+    </article>
+  ))
+}
