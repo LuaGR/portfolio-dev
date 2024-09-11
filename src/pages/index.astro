@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Card from '../components/Card.astro'
-import Badge from '../components/Badge.astro'
 import SocialPill from '../components/SocialPill.astro'
 import LinkedInIcon from '../components/icons/LinkedIn.astro'
 import GithubIcon from '../components/icons/Github.astro'
@@ -18,7 +17,7 @@ import Footer from '../components/Footer.astro'
   <main class='px-4 sm:px-20'>
     <SectionContainer
       id='top'
-      class='pt-16 pb-32'>
+      class='pt-16 pb-28'>
       <img
         class='size-24 rounded-full bg-yellow-50'
         src='/public/lua.webp'
@@ -33,23 +32,22 @@ import Footer from '../components/Footer.astro'
             class='text-red-200/90'>
             De Chimbote, Perú.</span
           ><span class='opacity-75'>
-            Especializado en crear webs estáticas.</span
+            Especializado en crear webs minimalistas y modernas.</span
           >
         </h2>
       </div>
 
       <nav class='flex gap-4 flex-wrap'>
-        <SocialPill
-          href='https://www.linkedin.com/in/renato-lua-aguirre-gonzales'>
+        <SocialPill href='https://www.linkedin.com/in/renato-lua-6ab34a289/'>
           <LinkedInIcon class='size-6' />
         </SocialPill>
 
-        <SocialPill href='https://github.com/LuaAguirre'>
+        <SocialPill href='https://github.com/LuaGR'>
           <GithubIcon class='size-6' />
         </SocialPill>
 
         <SocialPill href='mailto:lua.dev26@gmail.com'>
-          <EmailIcon class='size-4 md:size-6' />
+          <EmailIcon class='size-8' />
         </SocialPill>
       </nav>
     </SectionContainer>
