@@ -1,10 +1,34 @@
+import { useEffect, useState } from 'react'
 import AnimatedBackground from './navbar/animated-background'
 
 export function Tabs() {
   const TABS = ['Inicio', 'Proyectos', 'Sobre mí', 'Contacto']
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 30) {
+        setScrolled(true)
+      } else {
+        setScrolled(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+
+    // Limpia el evento cuando el componente se desmonta
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
 
   return (
-    <div className='flex flex-row rounded-[8px] p-2 bg-zinc-950'>
+    <div
+      className={`flex flex-row rounded-[8px] p-2 transition-colors duration-700 border ${
+        scrolled
+          ? 'bg-zinc-900 border-zinc-800'
+          : 'bg-zinc-950 border-transparent'
+      }`}>
       <AnimatedBackground
         defaultValue={TABS[0]}
         className='rounded-lg bg-zinc-800'
