@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import AnimatedBackground from "./navbar/animated-background";
+import AnimatedBackground from "./animated-background";
 
 export function Tabs() {
   const TABS = ["Inicio", "Proyectos", "Sobre mí", "Contacto"];
