@@ -1,7 +1,7 @@
 Tasks:
 
-- Update images in projects
 - Add About me
 - Add Technologies animation
 - Add Certificates
+- Update images in projects
 - Fix anchors navigate
