@@ -9,7 +9,7 @@ import UserIcon from "../components/icons/UserIcon.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import Projects from "../components/sections/Projects.astro";
 import AboutMe from "../components/sections/AboutMe.astro";
-import Footer from "../components/Footer.astro";
+import Technologies from '../components/sections/Technologies.astro'
 ---
 
 <Layout
@@ -57,6 +57,14 @@ import Footer from "../components/Footer.astro";
         Proyectos
       </h2>
       <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="tecnologias">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <UserIcon class="size-7" />
+        Tecnologías
+      </h2>
+      <Technologies/>
     </SectionContainer>
 
     <SectionContainer id="sobre-mi">

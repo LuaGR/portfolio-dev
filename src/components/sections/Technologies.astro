@@ -1,0 +1,25 @@
+---
+const technologies = [
+  { name: "HTML", color: "bg-red-400" },
+  { name: "CSS", color: "bg-blue-400" },
+  { name: "JavaScript", color: "bg-yellow-300" },
+  { name: "TypeScript", color: "bg-blue-500" },
+  { name: "React", color: "bg-cyan-500" },
+  { name: "Next.js", color: "bg-gray-800 text-white" },
+  { name: "Astro", color: "bg-orange-400" },
+  { name: "PostgreSQL", color: "bg-blue-600" },
+  { name: "Zustand", color: "bg-purple-400" },
+  { name: "NextUI", color: "bg-purple-700" },
+  { name: "Shadcn/ui", color: "bg-gray-600 text-white" },
+];
+---
+
+<div class="grid grid-cols-3 gap-4 p-6 max-w-5xl mx-auto">
+  {technologies.map((tech) => (
+    <div
+      class={`flex items-center justify-center h-32 rounded-lg shadow-md ${tech.color}`}
+    >
+      <span class="text-white text-xl font-bold">{tech.name}</span>
+    </div>
+  ))}
+</div>
