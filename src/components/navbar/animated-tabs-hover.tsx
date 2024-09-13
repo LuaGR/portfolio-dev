@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import AnimatedBackground from "./animated-background";
 
 export function Tabs() {
-  const TABS = ["Inicio", "Proyectos", "Sobre mí", "Contacto"];
-  const [scrolled, setScrolled] = useState(false);
+  const TABS: string[] = ["Inicio", "Proyectos", "Sobre mí", "Contacto"];
+  const [scrolled, setScrolled] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,8 +44,12 @@ export function Tabs() {
           <a
             key={index}
             data-id={tab}
-            href={`#${tab.toLowerCase().replace(/\s+/g, "-")}`}
-            className="px-2 py-0.5 transition-colors duration-300  text-zinc-400 hover:text-zinc-50"
+            href={
+              tab === "Contacto"
+                ? "mailto:lua.dev26@gmail.com"
+                : `#${tab.toLowerCase().replace(/\s+/g, "-")}`
+            }
+            className="px-2 py-0.5 transition-colors duration-300 text-zinc-400 hover:text-zinc-50"
           >
             {tab}
           </a>

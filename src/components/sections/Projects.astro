@@ -12,47 +12,47 @@ import ShadcnuiIcon from '../icons/Shadcnui.astro'
 const TAGS = {
   JAVASCRIPT: {
     name: 'Javascript',
-    class: 'bg-white/20 text-white',
+    class: 'bg-slate-800 text-white',
     icon: JavascriptIcon
   },
   TYPESCRIPT: {
     name: 'Typescript',
-    class: 'bg-white/20 text-white',
+    class: 'bg-slate-800 text-white',
     icon: TypescriptIcon
   },
   ASTRO: {
     name: 'Astro',
-    class: 'bg-white/20 text-white',
+    class: 'bg-slate-800 text-white',
     icon: AstroIcon
   },
   REACT: {
     name: 'React',
-    class: 'bg-white/20 text-white',
+    class: 'bg-slate-800 text-white',
     icon: ReactIcon
   },
   TAILWIND: {
     name: 'Tailwind CSS',
-    class: 'bg-white/20 text-white',
+    class: 'bg-slate-800 text-white',
     icon: TailwindIcon
   },
   NEXTJS: {
     name: 'Next.js',
-    class: 'bg-white/20 text-white',
+    class: 'bg-slate-800 text-white',
     icon: NextJSIcon
   },
   POSTGRESQL: {
     name: 'PostgreSQL',
-    class: 'bg-white/20 text-white',
+    class: 'bg-slate-800 text-white',
     icon: PostgreSQLIcon
   },
   SHADCNUI: {
     name: 'Shadcn/ui',
-    class: 'bg-white/20 text-white',
+    class: 'bg-slate-800 text-white',
     icon: ShadcnuiIcon
   },
   NEXTUI: {
     name: 'NextUI',
-    class: 'bg-white/20 text-white',
+    class: 'bg-slate-800 text-white',
     icon: NextUIIcon
   }
 }
@@ -61,7 +61,7 @@ const PROJECTS = [
   {
     title: 'SOSdev',
     description:
-      'Biblioteca actualizada con recursos para desarrolladores. Creado desde cero con Next.js, Typescript, Tailwind CSS, PostgreSQL y NextUI.',
+      'Una biblioteca de recursos para desarrolladores, construida desde cero con Next.js, TypeScript, Tailwind CSS, PostgreSQL y NextUI. Ofrece una colección actualizada de herramientas y referencias esenciales para potenciar tu desarrollo.',
     link: 'https://sosdev.vercel.app/',
     github: 'https://github.com/LuaGR/SOSdev',
     image: '/projects/monkeyType.webp',
@@ -76,7 +76,7 @@ const PROJECTS = [
   {
     title: 'Tsuki Store',
     description:
-      'E-commerce de ropa urbana inspirada en anime. Creado desde cero con Astro, Typescript, Tailwind CSS, React y Shadcn/ui.',
+      'E-commerce de moda urbana con influencia anime, desarrollado desde cero con Astro, TypeScript, Tailwind CSS, React y Shadcn/ui. Ofrece una experiencia única y estilizada para los entusiastas de la cultura pop.',
     link: 'https://tsuki-store.vercel.app/',
     github: 'https://github.com/LuaAguirre/tsuki-store',
     image: '/projects/tsuki.png',
@@ -91,7 +91,7 @@ const PROJECTS = [
   {
     title: 'Monkey Type Clone',
     description:
-      'Clon del juego de maquinografía Monkey Type. Creado con Javascript y Tailwind CSS.',
+      'Un clon del popular juego de maquinografía Monkey Type, construido con JavaScript y Tailwind CSS. Ofrece una experiencia interactiva para mejorar tus habilidades de escritura.',
     link: 'https://monkeytype.com/',
     github: 'https://github.com/monkeytypegame/monkeytype',
     image: '/projects/monkeyType.webp',
@@ -103,7 +103,7 @@ const PROJECTS = [
 {
   PROJECTS.map(({ title, description, link, github, image, tags }) => (
     <article class='mb-8'>
-      <h3 class='text-2xl font-semibold text-yellow-200 mb-2'>{title}</h3>
+      <h3 class='text-2xl font-semibold text-yellow-200 mb-4'>{title}</h3>
       <p class='text-md mb-8 text-pretty text-white/80'>{description}</p>
       <ul class='flex flex-wrap gap-x-2 '>
         {tags.map((tag) => (
