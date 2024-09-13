@@ -64,7 +64,7 @@ const PROJECTS = [
       'Una biblioteca de recursos para desarrolladores, construida desde cero con Next.js, TypeScript, Tailwind CSS, PostgreSQL y NextUI. Ofrece una colección actualizada de herramientas y referencias esenciales para potenciar tu desarrollo.',
     link: 'https://sosdev.vercel.app/',
     github: 'https://github.com/LuaGR/SOSdev',
-    image: '/projects/monkeyType.webp',
+    image: '/projects/sosdev.webp',
     tags: [
       TAGS.NEXTJS,
       TAGS.TYPESCRIPT,
@@ -76,10 +76,10 @@ const PROJECTS = [
   {
     title: 'Tsuki Store',
     description:
-      'E-commerce de moda urbana con influencia anime, desarrollado desde cero con Astro, TypeScript, Tailwind CSS, React y Shadcn/ui. Ofrece una experiencia única y estilizada para los entusiastas de la cultura pop.',
+      'Proyecto e-commerce de moda urbana con influencia anime, desarrollado desde cero con Astro, TypeScript, Tailwind CSS, React y Shadcn/ui. Ofrece una experiencia única y estilizada para los entusiastas de la cultura pop.',
     link: 'https://tsuki-store.vercel.app/',
     github: 'https://github.com/LuaAguirre/tsuki-store',
-    image: '/projects/tsuki.png',
+    image: '/projects/tsuki.webp',
     tags: [
       TAGS.ASTRO,
       TAGS.REACT,
@@ -101,7 +101,7 @@ const PROJECTS = [
 ---
 
 {
-  PROJECTS.map(({ title, description, link, github, image, tags }) => (
+  PROJECTS.map(({ title, description, link, image, tags }) => (
     <article class='mb-8'>
       <h3 class='text-2xl font-semibold text-yellow-200 mb-4'>{title}</h3>
       <p class='text-md mb-8 text-pretty text-white/80'>{description}</p>
