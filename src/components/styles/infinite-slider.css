@@ -1,0 +1,14 @@
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.infinite-slider {
+  display: flex;
+  width: max-content;
+  animation: infinite-scroll 20s linear infinite;
+}

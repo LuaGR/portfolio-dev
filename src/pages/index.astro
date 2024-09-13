@@ -1,79 +1,74 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import SocialPill from "../components/SocialPill.astro";
-import LinkedInIcon from "../components/icons/LinkedIn.astro";
-import GithubIcon from "../components/icons/Github.astro";
-import EmailIcon from "../components/icons/Email.astro";
-import CodeIcon from "../components/icons/Code.astro";
-import UserIcon from "../components/icons/UserIcon.astro";
-import SectionContainer from "../components/SectionContainer.astro";
-import Projects from "../components/sections/Projects.astro";
-import AboutMe from "../components/sections/AboutMe.astro";
-import Technologies from '../components/sections/Technologies.astro'
+import Layout from '../layouts/Layout.astro'
+import SocialPill from '../components/SocialPill.astro'
+import LinkedInIcon from '../components/icons/LinkedIn.astro'
+import GithubIcon from '../components/icons/Github.astro'
+import EmailIcon from '../components/icons/Email.astro'
+import CodeIcon from '../components/icons/Code.astro'
+import UserIcon from '../components/icons/UserIcon.astro'
+import SectionContainer from '../components/SectionContainer.astro'
+import Projects from '../components/sections/Projects.astro'
+import AboutMe from '../components/sections/AboutMe.astro'
+import { InfiniteSlider } from '../components/infinite-slider'
 ---
 
 <Layout
-  title="Porfolio de Renato Lua - Desarrollador y Programador Web"
-  description="Contrata a Renato Lua para crear tu aplicación web. Desarrollador Web, especializado en crear aplicaciones únicas."
->
-  <main class="px-4 sm:px-20">
-    <SectionContainer id="inicio" class="pt-24 pb-28">
+  title='Porfolio de Renato Lua - Desarrollador y Programador Web'
+  description='Contrata a Renato Lua para crear tu aplicación web. Desarrollador Web, especializado en crear aplicaciones únicas.'>
+  <main class='px-4 sm:px-20'>
+    <SectionContainer
+      id='inicio'
+      class='pt-24 pb-28'>
       <img
-        class="size-24 rounded-full bg-yellow-50"
-        src="/public/lua.webp"
-        alt="Perfil de Lua"
+        class='size-24 rounded-full bg-yellow-50'
+        src='/public/lua.webp'
+        alt='Perfil de Lua'
       />
-      <div class="flex flex-col gap-4">
-        <h1 class="text-white text-3xl md:text-4xl font-bold">Hola, soy Lua</h1>
-        <h2 class="text-xl text-wrap max-w-[700px]">
-          <span class="text-yellow-200/90">Frontend Developer.</span><span
-            class="text-red-200/90"
-          >
+      <div class='flex flex-col gap-4'>
+        <h1 class='text-white text-3xl md:text-4xl font-bold'>Hola, soy Lua</h1>
+        <h2 class='text-xl text-wrap max-w-[700px]'>
+          <span class='text-yellow-200/90'>Frontend Developer.</span><span
+            class='text-red-200/90'>
             De Chimbote, Perú.</span
-          ><span class="opacity-90">
+          ><span class='opacity-90'>
             Especializado en crear webs minimalistas y modernas.</span
           >
         </h2>
       </div>
 
-      <nav class="flex gap-4 flex-wrap">
-        <SocialPill href="https://www.linkedin.com/in/renato-lua-6ab34a289/">
-          <LinkedInIcon class="size-6" />
+      <nav class='flex gap-4 flex-wrap'>
+        <SocialPill href='https://www.linkedin.com/in/renato-lua-6ab34a289/'>
+          <LinkedInIcon class='size-6' />
         </SocialPill>
 
-        <SocialPill href="https://github.com/LuaGR">
-          <GithubIcon class="size-6" />
+        <SocialPill href='https://github.com/LuaGR'>
+          <GithubIcon class='size-6' />
         </SocialPill>
 
-        <SocialPill href="mailto:lua.dev26@gmail.com">
-          <EmailIcon class="size-8" />
+        <SocialPill href='mailto:lua.dev26@gmail.com'>
+          <EmailIcon class='size-8' />
         </SocialPill>
       </nav>
     </SectionContainer>
 
-    <SectionContainer id="proyectos">
-      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-        <CodeIcon class="size-7" />
+    <SectionContainer>
+      <InfiniteSlider client:load />
+    </SectionContainer>
+
+    <SectionContainer id='proyectos'>
+      <h2 class='text-3xl font-semibold mb-6 flex gap-x-3 items-center'>
+        <CodeIcon class='size-7' />
         Proyectos
       </h2>
       <Projects />
     </SectionContainer>
 
-    <SectionContainer id="tecnologias">
-      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-        <UserIcon class="size-7" />
-        Tecnologías
-      </h2>
-      <Technologies/>
-    </SectionContainer>
-
-    <SectionContainer id="sobre-mi">
-      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
-        <UserIcon class="size-7" />
+    <SectionContainer id='sobre-mi'>
+      <h2 class='text-3xl font-semibold mb-6 flex gap-x-3 items-center'>
+        <UserIcon class='size-7' />
         Sobre mí
       </h2>
       <AboutMe />
     </SectionContainer>
-    
   </main>
 </Layout>
