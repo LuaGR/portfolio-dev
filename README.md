@@ -4,7 +4,7 @@
 
 ## 🖥️ Tecnologías que utilizo
 
-En mi portafolio, utilizo las tecnologías que manejo en mi día a día como desarrollador frontend:
+En mi portfolio, utilizo las tecnologías que manejo en mi día a día como desarrollador frontend:
 
 - **JavaScript**: El lenguaje que utilizo para construir interactividad en la web.
 - **React**: Mi biblioteca favorita para crear interfaces de usuario modernas y dinámicas.

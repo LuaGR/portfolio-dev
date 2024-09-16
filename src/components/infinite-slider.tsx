@@ -10,6 +10,8 @@ import PostgreSQL from "./slider/postgresql";
 import Shadcnui from "./slider/shadcnui";
 import Git from "./slider/git";
 import Github from "./slider/github";
+import Playwright from "./slider/playwright";
+import Vercel from "./slider/vercel";
 
 // Define el tipo para los elementos de LOGOS
 interface Logo {
@@ -28,6 +30,8 @@ const LOGOS: Logo[] = [
   { component: <Astro width={24} height={24} />, name: "Astro" },
   { component: <PostgreSQL width={24} height={24} />, name: "PostgreSQL" },
   { component: <Shadcnui width={24} height={24} />, name: "Shadcn/ui" },
+  { component: <Playwright width={24} height={24} />, name: "Playwright" },
+  { component: <Vercel width={24} height={24} />, name: "Vercel" },
   { component: <Git width={24} height={24} />, name: "Git" },
   { component: <Github width={24} height={24} />, name: "Github" },
 ];
