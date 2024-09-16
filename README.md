@@ -1,4 +1,4 @@
-# 💼 Portfolio Personal - [Lua]
+# 💼 Portfolio Personal - Lua
 
 ¡Bienvenido a mi portfolio personal! Aquí muestro algunos de los proyectos más destacados que he desarrollado, mis habilidades técnicas, y un poco sobre mí como desarrollador frontend.
 
