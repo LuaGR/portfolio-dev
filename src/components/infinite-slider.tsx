@@ -12,6 +12,8 @@ import Git from "./slider/git";
 import Github from "./slider/github";
 import Playwright from "./slider/playwright";
 import Vercel from "./slider/vercel";
+import Vitejs from "./slider/vite";
+import Angular from "./slider/angular";
 
 // Define el tipo para los elementos de LOGOS
 interface Logo {
@@ -25,6 +27,8 @@ const LOGOS: Logo[] = [
   { component: <JavaScript width={24} height={24} />, name: "JavaScript" },
   { component: <TypeScript width={24} height={24} />, name: "TypeScript" },
   { component: <React width={24} height={24} />, name: "React" },
+  { component: <Angular width={24} height={24} />, name: "Angular" },
+  { component: <Vitejs width={24} height={24} />, name: "Vite.js" },
   { component: <TailwindCSS width={24} height={24} />, name: "TailwindCSS" },
   { component: <Nextjs width={24} height={24} />, name: "Next.js" },
   { component: <Astro width={24} height={24} />, name: "Astro" },
