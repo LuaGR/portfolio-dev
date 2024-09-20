@@ -12,7 +12,6 @@ import Git from "./slider/git";
 import Github from "./slider/github";
 import Playwright from "./slider/playwright";
 import Vercel from "./slider/vercel";
-import Vitejs from "./slider/vite";
 import Angular from "./slider/angular";
 
 // Define el tipo para los elementos de LOGOS
@@ -25,19 +24,18 @@ const LOGOS: Logo[] = [
   { component: <HTML5 width={24} height={24} />, name: "HTML5" },
   { component: <CSS width={24} height={24} />, name: "CSS" },
   { component: <JavaScript width={24} height={24} />, name: "JavaScript" },
-  { component: <TypeScript width={24} height={24} />, name: "TypeScript" },
   { component: <React width={24} height={24} />, name: "React" },
+  { component: <TypeScript width={24} height={24} />, name: "TypeScript" },
   { component: <Angular width={24} height={24} />, name: "Angular" },
-  { component: <Vitejs width={24} height={24} />, name: "Vite.js" },
   { component: <TailwindCSS width={24} height={24} />, name: "TailwindCSS" },
   { component: <Nextjs width={24} height={24} />, name: "Next.js" },
   { component: <Astro width={24} height={24} />, name: "Astro" },
   { component: <PostgreSQL width={24} height={24} />, name: "PostgreSQL" },
-  { component: <Shadcnui width={24} height={24} />, name: "Shadcn/ui" },
-  { component: <Playwright width={24} height={24} />, name: "Playwright" },
   { component: <Vercel width={24} height={24} />, name: "Vercel" },
+  { component: <Playwright width={24} height={24} />, name: "Playwright" },
   { component: <Git width={24} height={24} />, name: "Git" },
   { component: <Github width={24} height={24} />, name: "Github" },
+  { component: <Shadcnui width={24} height={24} />, name: "Shadcn/ui" },
 ];
 
 export const InfiniteSlider: React.FC = () => {
