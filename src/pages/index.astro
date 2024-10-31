@@ -10,6 +10,8 @@ import SectionContainer from '../components/SectionContainer.astro'
 import Projects from '../components/sections/Projects.astro'
 import AboutMe from '../components/sections/AboutMe.astro'
 import { InfiniteSlider } from '../components/infinite-slider'
+import Experience from '../components/sections/Experience.astro'
+import BriefCase from '../components/icons/BriefCase.astro'
 ---
 
 <Layout
@@ -29,7 +31,7 @@ import { InfiniteSlider } from '../components/infinite-slider'
         <h2 class='text-xl text-wrap max-w-[700px]'>
           <span class='text-yellow-200/90'>Frontend Developer.</span><span
             class='text-red-200/90'>
-            De Chimbote, Perú.</span
+            De Lima, Perú.</span
           ><span class='opacity-90'>
             Especializado en crear webs minimalistas y modernas.</span
           >
@@ -53,6 +55,14 @@ import { InfiniteSlider } from '../components/infinite-slider'
 
     <SectionContainer>
       <InfiniteSlider client:load />
+    </SectionContainer>
+
+    <SectionContainer id='experiencia'>
+      <h2 class='text-3xl font-semibold mb-6 flex gap-x-3 items-center'>
+        <BriefCase class='size-7' />
+        Experiencia
+      </h2>
+      <Experience />
     </SectionContainer>
 
     <SectionContainer id='proyectos'>

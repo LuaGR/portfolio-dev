@@ -1,0 +1,29 @@
+---
+import ExperienceItem from './ExperienceItem.astro'
+const EXPERIENCE = [
+  {
+    date: 'Actualmente...',
+    title: 'Desarrollador Frontend',
+    company: 'CALMA',
+    description:
+      'Formo parte del equipo de desarrollo de una aplicación web con React, enfocada en la gestión de recursos humanos. Contribuyo desde la fase de requerimientos, investigando y aplicando mejores prácticas y patrones de diseño para optimizar la arquitectura del software.'
+  },
+  {
+    date: 'Abril 2024',
+    title: 'Desarrollador Frontend',
+    company: 'Freelance',
+    description:
+      'He desarrollado soluciones de e-commerce con Astro y landing pages con WordPress, enfocándome en crear experiencias web atractivas y funcionales que cumplen con las necesidades de mis clientes.'
+  }
+]
+---
+
+<ol class='relative mt-8'>
+  {
+    EXPERIENCE.map((experience) => (
+      <li class=''>
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

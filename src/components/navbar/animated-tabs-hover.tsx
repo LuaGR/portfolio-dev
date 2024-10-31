@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import AnimatedBackground from "./animated-background";
 
 export function Tabs() {
-  const TABS: string[] = ["Inicio", "Proyectos", "Sobre mí", "Contacto"];
+  const TABS: string[] = ["Experiencia", "Proyectos", "Sobre mí", "Contacto"];
   const [scrolled, setScrolled] = useState<boolean>(false);
 
   useEffect(() => {

@@ -10,6 +10,13 @@ import AstroIcon from '../icons/AstroIcon.astro'
 import ShadcnuiIcon from '../icons/Shadcnui.astro'
 import PlaywrightIcon from '../icons/Playwright.astro'
 import VercelIcon from '../icons/Vercel.astro'
+import AngularIcon from '../icons/AngularIcon.astro'
+import SassIcon from '../icons/SassIcon.astro'
+import SupabaseIcon from '../icons/SupabaseIcon.astro'
+import Prisma from '../icons/PrismaIcon.astro'
+import NodeJS from '../icons/NodeJS.astro'
+import ExpressJS from '../icons/ExpressJS.astro'
+import Cloudinary from '../icons/Cloudinary.astro'
 
 const TAGS = {
   JAVASCRIPT: {
@@ -32,6 +39,26 @@ const TAGS = {
     class: 'bg-slate-800 text-white',
     icon: ReactIcon
   },
+  ANGULAR: {
+    name: 'Angular',
+    class: 'bg-slate-800 text-white',
+    icon: AngularIcon
+  },
+  SASS: {
+    name: 'Sass',
+    class: 'bg-slate-800 text-white',
+    icon: SassIcon
+  },
+  PRISMA: {
+    name: 'Prisma',
+    class: 'bg-slate-800 text-white',
+    icon: Prisma
+  },
+  SUPABASE: {
+    name: 'Supabase',
+    class: 'bg-slate-800 text-white',
+    icon: SupabaseIcon
+  },
   TAILWIND: {
     name: 'Tailwind CSS',
     class: 'bg-slate-800 text-white',
@@ -42,10 +69,25 @@ const TAGS = {
     class: 'bg-slate-800 text-white',
     icon: NextJSIcon
   },
+  NODEJS: {
+    name: 'Node.js',
+    class: 'bg-slate-800 text-white',
+    icon: NodeJS
+  },
+  EXPRESSJS: {
+    name: 'Express.js',
+    class: 'bg-slate-800 text-white',
+    icon: ExpressJS
+  },
   POSTGRESQL: {
     name: 'PostgreSQL',
     class: 'bg-slate-800 text-white',
     icon: PostgreSQLIcon
+  },
+  ANGULARMATERIAL: {
+    name: 'Angular Material',
+    class: 'bg-slate-800 text-white',
+    icon: AngularIcon
   },
   SHADCNUI: {
     name: 'Shadcn/ui',
@@ -62,6 +104,11 @@ const TAGS = {
     class: 'bg-slate-800 text-white',
     icon: PlaywrightIcon
   },
+  CLOUDINARY: {
+    name: 'Cloudinary',
+    class: 'bg-slate-800 text-white',
+    icon: Cloudinary
+  },
   VERCEL: {
     name: 'Vercel',
     class: 'bg-slate-800 text-white',
@@ -70,6 +117,24 @@ const TAGS = {
 }
 
 const PROJECTS = [
+  {
+    title: 'Chibi Link',
+    description:
+      'Acortador de URLs simple y eficiente que permite a los usuarios transformar enlaces largos en enlaces cortos y fáciles de compartir. Este proyecto está diseñado para ser fácil de usar y se puede integrar en aplicaciones web, utilizando Clean Architecture para mantener una estructura de código limpia y escalable.',
+    link: 'https://chibi-link.vercel.app/',
+    github: 'https://github.com/LuaGR/chibi-link',
+    image: '/projects/chibi-link.webp',
+    tags: [
+      TAGS.ANGULAR,
+      TAGS.NODEJS,
+      TAGS.EXPRESSJS,
+      TAGS.SASS,
+      TAGS.ANGULARMATERIAL,
+      TAGS.POSTGRESQL,
+      TAGS.PRISMA,
+      TAGS.SUPABASE
+    ]
+  },
   {
     title: 'SOSdev',
     description:
@@ -100,6 +165,15 @@ const PROJECTS = [
       TAGS.TAILWIND,
       TAGS.SHADCNUI
     ]
+  },
+  {
+    title: 'SpookifyMe',
+    description:
+      'Aplicación web divertida y atractiva que permite a los usuarios cargar sus fotos y agregarles un toque espeluznante utilizando las poderosas capacidades de transformación de imágenes de Cloudinary. Ya sea que quieras crear una imagen con temática de Halloween o simplemente disfrutar de algunos efectos espeluznantes, ¡SpookifyMe lo hace fácil y entretenido!',
+    link: 'https://spookify-me.vercel.app/',
+    github: 'https://github.com/LuaGR/spookify-me',
+    image: '/projects/spookify-me.webp',
+    tags: [TAGS.ASTRO, TAGS.JAVASCRIPT, TAGS.TAILWIND, TAGS.CLOUDINARY]
   }
 ]
 ---
