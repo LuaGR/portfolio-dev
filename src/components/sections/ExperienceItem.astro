@@ -1,8 +1,19 @@
 ---
+interface Description {
+  title: string
+  stack: string
+  list: {
+    1: string
+    2: string
+    3: string
+    4?: string
+  }
+}
+
 interface Props {
   title: string
   company: string
-  description: string
+  description: Description
   link?: string
   date: string
 }
@@ -24,6 +35,13 @@ const { title, company, description, link, date } = Astro.props
     </div>
   </div>
   <div class='relative flex flex-col gap-2 pb-4 text-gray-300 md:col-span-3'>
-    {description}
+    <h3 class='font-bold text-lg'>{description.title}</h3><br />
+    <span>{description.stack}</span><br />
+    <ul>
+      <ol>- {description.list[1]}</ol><br />
+      <ol>- {description.list[2]}</ol><br />
+      <ol>- {description.list[3]}</ol><br />
+      <ol>- {description.list[4]}</ol>
+    </ul>
   </div>
 </div>

@@ -5,15 +5,33 @@ const EXPERIENCE = [
     date: 'Septiembre 2024 - Actualmente',
     title: 'Desarrollador Frontend',
     company: 'CALMA',
-    description:
-      'Desarrollo un sistema de gestión de RRHH con React y TypeScript. Colaboré en los requerimientos desde cero, investigo patrones de diseño y arquitectura para optimizar rendimiento y escalabilidad, y creo interfaces para gestionar las solicitudes de nuevos colaboradores junto con sus documentos en la plataforma.'
+    description: {
+      title: 'Sistema de Gestión de RRHH',
+      stack: 'React, Typescript, Redux, Axios, Material UI y Jest',
+      list: {
+        1: 'Colaboré en los requerimientos desde 0, investigando sobre la arquitectura y patrones de diseño adecuados para obtener el mayor rendimiento posible y escalabilidad',
+        2: 'Creación de interfaces para gestionar las solicitudes de nuevos colaboradores y sus documentos dentro de la plataforma.',
+        3: 'Validación de los formularios con Zod.',
+        4: 'Pruebas unitarias con Jest.'
+      }
+    }
   },
   {
-    date: 'Abril 2024 - Septiembre 2024',
+    date: 'Octubre 2023 - Septiembre 2024',
     title: 'Desarrollador Web',
     company: 'Freelance',
-    description:
-      'He desarrollado soluciones de e-commerce con Astro y WordPress, enfocándome en crear experiencias web atractivas y funcionales que cumplen con las necesidades de mis clientes.'
+    description: {
+      title: 'E-commerce',
+      stack:
+        'Astro, React, TypeScript, Shadcn/ui y Zustand / Wordpress, WooCommerce y Elementor',
+      list: {
+        1: 'Desarrollé una tienda en línea desde cero, optimizando el rendimiento mediante la arquitectura de Astro para lograr tiempos de carga rápidos y una excelente experiencia de usuario.',
+        2: 'Implementé un diseño visualmente atractivo y funcional, con interfaces rápidas y dinámicas, enfocadas en mejorar la navegación, visualización de productos y proceso de compra.',
+        3: 'Configuré y personalicé e-commerce en WordPress usando WooCommerce, asegurando una gestión sencilla de productos, inventarios y pedidos desde el panel de administración.',
+        4: 'Desarrollé una experiencia de compra atractiva y fácil de usar, adaptando funcionalidades específicas según las necesidades del cliente.',
+        5: 'prueba'
+      }
+    }
   }
 ]
 ---
@@ -21,7 +39,7 @@ const EXPERIENCE = [
 <ol class='relative mt-8'>
   {
     EXPERIENCE.map((experience) => (
-      <li class=''>
+      <li>
         <ExperienceItem {...experience} />
       </li>
     ))
