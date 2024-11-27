@@ -1,10 +1,8 @@
-import TypeScript from "./slider/typescript";
 import React from "./slider/react";
 import TailwindCSS from "./slider/tailwindcss";
 import Nextjs from "./slider/nextjs";
 import Astro from "./slider/astro";
 import PostgreSQL from "./slider/postgresql";
-import Shadcnui from "./slider/shadcnui";
 import Playwright from "./slider/playwright";
 import Angular from "./slider/angular";
 import Vue from "./slider/vue";
@@ -13,6 +11,8 @@ import Jest from "./slider/jest";
 import MySQL from "./slider/mysql";
 import Docker from "./slider/docker";
 import Expressjs from "./slider/expressjs";
+import Spring from "./slider/spring";
+import MongoDB from "./slider/mongodb";
 
 interface Logo {
   component: JSX.Element;
@@ -20,21 +20,21 @@ interface Logo {
 }
 
 const LOGOS: Logo[] = [
-  { component: <TypeScript width={24} height={24} />, name: "TypeScript" },
   { component: <React width={24} height={24} />, name: "React" },
   { component: <Vue width={24} height={24} />, name: "Vue" },
   { component: <Angular width={24} height={24} />, name: "Angular" },
   { component: <Jest width={24} height={24} />, name: "Jest" },
   { component: <Playwright width={24} height={24} />, name: "Playwright" },
   { component: <Laravel width={24} height={24} />, name: "Laravel" },
+  { component: <Spring width={24} height={24} />, name: "Spring" },
   { component: <Expressjs width={24} height={24} />, name: "Express.js" },
   { component: <MySQL width={24} height={24} />, name: "MySQL" },
   { component: <PostgreSQL width={24} height={24} />, name: "PostgreSQL" },
+  { component: <MongoDB width={24} height={24} />, name: "MongoDB" },
   { component: <Docker width={24} height={24} />, name: "Docker" },
   { component: <TailwindCSS width={24} height={24} />, name: "TailwindCSS" },
   { component: <Nextjs width={24} height={24} />, name: "Next.js" },
   { component: <Astro width={24} height={24} />, name: "Astro" },
-  { component: <Shadcnui width={24} height={24} />, name: "Shadcn/ui" },
 ];
 
 export const InfiniteSlider: React.FC = () => {
