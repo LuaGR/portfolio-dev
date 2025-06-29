@@ -1,43 +1,59 @@
 ---
-import ExperienceItem from "./experience/ExperienceItem.astro"
+import ExperienceItem from "./experience/ExperienceItem.astro";
 
 const EXPERIENCE = [
   {
-    date: 'Septiembre 2024 - Actualmente',
-    title: 'Desarrollador Frontend',
-    company: 'CALMA',
+    date: "Marzo 2024 - Actualmente",
+    title: "Desarrollador Frontend",
+    company: "HOLINSYS",
     description: {
-      title: 'Sistema de Gestión de RRHH',
-      stack: 'React, Typescript, Redux, Axios, Material UI y Jest',
+      title: "Sistemas de Homologación, Facturación, Transporte y Construcción",
+      stack:
+        "React, Angular, Typescript, TanStack Query, Axios, Metronic, Formik y Yup",
       list: {
-        1: 'Colaboré en los requerimientos desde 0, investigando sobre la arquitectura y patrones de diseño adecuados para obtener el mayor rendimiento posible y escalabilidad',
-        2: 'Creación de interfaces para gestionar las solicitudes de nuevos colaboradores y sus documentos dentro de la plataforma.',
-        3: 'Validación de los formularios con Zod.',
-        4: 'Pruebas unitarias con Jest.'
-      }
-    }
+        1: "Lideré un proyecto a mi cargo coordinando equipos de frontend y backend, gestionando el desarrollo de soluciones a medida y la documentación de APIs para nuevos módulos.",
+        2: "Desarrollo de interfaces con React, Angular y Typescript utilizando componentes de Metronic, e integración con APIs REST mediante Axios.",
+        3: "Implementación de formularios complejos con Formik y Yup, y validación de datos de entrada.",
+        4: "Refactorización y optimización de proyectos aplicando Clean Architecture, lazy loading y optimización de bundles para mayor escalabilidad y rendimiento.",
+      },
+    },
   },
   {
-    date: 'Octubre 2023 - Septiembre 2024',
-    title: 'Desarrollador Web',
-    company: 'Freelance',
+    date: "Septiembre 2024 - Febrero 2025",
+    title: "Desarrollador Frontend",
+    company: "CALMA",
     description: {
-      title: 'E-commerce',
-      stack:
-        'Astro, React, TypeScript, Shadcn/ui y Zustand / Wordpress, WooCommerce y Elementor',
+      title: "Sistema de Gestión de RRHH",
+      stack: "React, Typescript, Redux, Axios, Material UI y Jest",
       list: {
-        1: 'Desarrollé una tienda en línea desde cero, optimizando el rendimiento mediante la arquitectura de Astro para lograr tiempos de carga rápidos y una excelente experiencia de usuario.',
-        2: 'Implementé un diseño visualmente atractivo y funcional, con interfaces rápidas y dinámicas, enfocadas en mejorar la navegación, visualización de productos y proceso de compra.',
-        3: 'Configuré y personalicé e-commerce en WordPress usando WooCommerce, asegurando una gestión sencilla de productos, inventarios y pedidos desde el panel de administración.',
-        4: 'Desarrollé una experiencia de compra atractiva y fácil de usar, adaptando funcionalidades específicas según las necesidades del cliente.',
-        5: 'prueba'
-      }
-    }
-  }
-]
+        1: "Colaboré en los requerimientos desde 0, investigando sobre la arquitectura y patrones de diseño adecuados para obtener el mayor rendimiento posible y escalabilidad",
+        2: "Creación de interfaces para gestionar las solicitudes de nuevos colaboradores y sus documentos dentro de la plataforma.",
+        3: "Validación de los formularios con Zod.",
+        4: "Pruebas unitarias con Jest.",
+      },
+    },
+  },
+  {
+    date: "Octubre 2023 - Septiembre 2024",
+    title: "Desarrollador Web",
+    company: "Freelance",
+    description: {
+      title: "E-commerce",
+      stack:
+        "Astro, React, TypeScript, Shadcn/ui y Zustand / Wordpress, WooCommerce y Elementor",
+      list: {
+        1: "Desarrollé una tienda en línea desde cero, optimizando el rendimiento mediante la arquitectura de Astro para lograr tiempos de carga rápidos y una excelente experiencia de usuario.",
+        2: "Implementé un diseño visualmente atractivo y funcional, con interfaces rápidas y dinámicas, enfocadas en mejorar la navegación, visualización de productos y proceso de compra.",
+        3: "Configuré y personalicé e-commerce en WordPress usando WooCommerce, asegurando una gestión sencilla de productos, inventarios y pedidos desde el panel de administración.",
+        4: "Desarrollé una experiencia de compra atractiva y fácil de usar, adaptando funcionalidades específicas según las necesidades del cliente.",
+        5: "prueba",
+      },
+    },
+  },
+];
 ---
 
-<ol class='relative mt-8'>
+<ol class="relative mt-8">
   {
     EXPERIENCE.map((experience) => (
       <li>
